@@ -1,0 +1,438 @@
+.sustainability {
+  padding: var(--space-xl) 0;
+  animation: fadeIn var(--transition-base) ease-out;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-xl);
+}
+
+.headerContent h1 {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-xs);
+}
+
+.headerContent p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+}
+
+.scoreBadge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: var(--radius-lg);
+  color: white;
+}
+
+.scoreBadge svg {
+  opacity: 0.8;
+}
+
+.scoreValue {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  display: block;
+}
+
+.scoreLabel {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: var(--space-md);
+}
+
+.tab {
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.tab:hover {
+  color: var(--color-text-primary);
+  background: var(--color-background);
+}
+
+.tab.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.statCard {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.statIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  color: white;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.statLabel {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.statTrend {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-success);
+}
+
+.progressBar {
+  height: 8px;
+  background: var(--color-background);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.statSubtext {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+/* Chart Card */
+.chartCard {
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.cardHeader {
+  margin-bottom: var(--space-lg);
+}
+
+.cardHeader h2 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-xs);
+}
+
+.cardSubtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.chartContainer {
+  min-height: 250px;
+}
+
+/* Two Column */
+.twoColumn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  justify-content: center;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.legendColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legendValue {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* Analytics */
+.analyticsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.analyticsCard {
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.analyticsCard h3 {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.analyticsValue {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.analyticsCard p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Goals */
+.goalCard {
+  padding: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.goalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.goalHeader h2 {
+  font-size: var(--text-xl);
+}
+
+.goalStatus {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.goalProgress {
+  height: 12px;
+  background: var(--color-background);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
+.goalFill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-primary-light) 100%
+  );
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.goalActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.goalValue {
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.goalsList h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-md);
+}
+
+.activeGoal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.goalIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 148, 136, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+}
+
+.goalInfo {
+  flex: 1;
+}
+
+.goalInfo h4 {
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.goalInfo p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.goalProgressSmall {
+  width: 100px;
+  height: 8px;
+  background: var(--color-background);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.goalProgressSmall div {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+/* Achievements */
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.achievementCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  position: relative;
+  opacity: 0.6;
+}
+
+.achievementCard.earned {
+  opacity: 1;
+}
+
+.achievementIcon {
+  font-size: 2rem;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+}
+
+.achievementCard.earned .achievementIcon {
+  background: rgba(13, 148, 136, 0.1);
+}
+
+.achievementInfo h3 {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-xs);
+}
+
+.achievementInfo p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.achievementBadge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  color: var(--color-warning);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .twoColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .analyticsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievementsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContent h1 {
+    font-size: var(--text-3xl);
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .achievementsGrid {
+    grid-template-columns: 1fr;
+  }
+}
